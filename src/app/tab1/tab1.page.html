@@ -1,17 +1,19 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Welcome</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-avatar class="item-avatar">
+    <img src="./assets/images/personal picture.jpg"></ion-avatar>
+  <ion-card class="item-card"><p>I've learned through past experiences how to work well with people from
+    all over the world. I'm a highly motivated person looking to contribute to a great
+    company. I love finding solutions that are satisfactory for every
+    player and adapt quickly to new situations and information.
+    I'm very passionate about music, technology and marketing.</p></ion-card>
+  
 </ion-content>

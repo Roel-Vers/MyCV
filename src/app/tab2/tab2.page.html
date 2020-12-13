@@ -1,17 +1,31 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Resume</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Resume</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  
+  <ion-content class="card-background-page">
+    <ion-card class="ion-text-center" routerLink="/info">
+      <img src="../assets/images/About Me.png"/>
+    </ion-card>
+    <ion-card class="ion-text-center" routerLink="/experience">
+      <img src="../assets/images/experience.jpeg"/>
+    </ion-card>
+    <ion-card class="ion-text-center" routerLink="/skills">
+      <img src="../assets/images/skills2.jpg"/>
+    </ion-card>
+    <ion-card class="ion-text-center" routerLink="/projects">
+      <img src="../assets/images/project image.jpg"/>
+    </ion-card>
+  </ion-content>
 </ion-content>
